@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 8016bb56a03b7c9469deaabc25e4956d
+  - enabled: 1
     path: Assets/Scenes/CreativeMural.unity
     guid: 97f4aba21d3574a46a9e0321a53ef99e
   - enabled: 1
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tangram2.unity
     guid: 67b7eef8b83980746843f6b1d4ad6d82
+  - enabled: 1
+    path: Assets/Scenes/ResultScene.unity
+    guid: 2f671f9f379969f4b93f4837230c647d
   m_configObjects: {}

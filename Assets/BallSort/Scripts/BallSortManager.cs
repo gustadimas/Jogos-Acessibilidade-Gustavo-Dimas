@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BallSortManager : MonoBehaviour
 {
@@ -109,6 +110,7 @@ public class BallSortManager : MonoBehaviour
         {
             currentState = State.Over;
             Debug.Log("Você venceu!");
+            CheckVictoryScene();
             LevelCompleted?.Invoke();
         }
     }
@@ -191,5 +193,12 @@ public class BallSortManager : MonoBehaviour
         undoStack.Clear();
         currentState = State.Playing;
         CreateLevel();
+    }
+
+    public void CheckVictoryScene()
+    {
+        PlayerPrefs.SetInt("LevelWon", 1);
+        PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("ResultScene");
     }
 }

@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public enum EnvironmentType { Ocean, Forest, Snow }
 
@@ -82,7 +84,6 @@ public class GameManager : MonoBehaviour
     public void BeginDrag(GameObject animalObj, PointerEventData eventData)
     {
         animalInDrag = animals.Find(_a => _a.animalObj == animalObj);
-
         if (animalInDrag != null)
         {
             RectTransform _rt = animalObj.GetComponent<RectTransform>();
@@ -155,20 +156,16 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Variável associationPositions não definida!");
             return;
         }
-
         if (associationOccupied == null || associationOccupied.Length != associationPositions.Length)
         {
             associationOccupied = new bool[associationPositions.Length];
         }
-
         List<int> _freeIndices = new List<int>();
-
         for (int _i = 0; _i < associationPositions.Length; _i++)
         {
             if (!associationOccupied[_i])
                 _freeIndices.Add(_i);
         }
-
         if (_freeIndices.Count > 0)
         {
             int _randomIndex = Random.Range(0, _freeIndices.Count);
@@ -179,7 +176,6 @@ public class GameManager : MonoBehaviour
             associationOccupied[_posIndex] = true;
             Debug.Log("Animal associado a posição: " + _posIndex);
         }
-
         else
         {
             Debug.Log("Nenhuma posição de associação disponível. Retornando o animal.");
@@ -196,7 +192,6 @@ public class GameManager : MonoBehaviour
             if (animalObj.transform.parent == _assoc)
                 return true;
         }
-
         return false;
     }
 
@@ -214,7 +209,6 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-
         if (_allCorrect)
         {
             foreach (var _animal in animals)
@@ -222,9 +216,16 @@ public class GameManager : MonoBehaviour
                 if (_animal.correctEnvironment == currentEnvironment)
                     _animal.animalObj.SetActive(false);
             }
-
             Debug.Log("Ambiente " + currentEnvironment + " Completo!");
-            ActivateNextEnvironment();
+            if (currentEnvironment == EnvironmentType.Snow)
+            {
+                Debug.Log("Você venceu!");
+                CheckVictory();
+            }
+            else
+            {
+                ActivateNextEnvironment();
+            }
         }
         else
         {
@@ -237,11 +238,9 @@ public class GameManager : MonoBehaviour
     {
         if (associationPositions == null || associationOccupied == null)
             return;
-
         for (int _i = 0; _i < associationPositions.Length; _i++)
         {
             associationOccupied[_i] = false;
-
             if (associationPositions[_i].childCount > 0)
             {
                 Transform _child = associationPositions[_i].GetChild(0);
@@ -253,7 +252,6 @@ public class GameManager : MonoBehaviour
     public void ActivateNextEnvironment()
     {
         ClearAssociations();
-
         switch (currentEnvironment)
         {
             case EnvironmentType.Ocean:
@@ -262,16 +260,13 @@ public class GameManager : MonoBehaviour
                 currentEnvironment = EnvironmentType.Forest;
                 Debug.Log("Ambiente de Floresta ativo!");
                 break;
-
             case EnvironmentType.Forest:
                 if (environmentForest != null) environmentForest.SetActive(false);
                 if (environmentSnow != null) environmentSnow.SetActive(true);
                 currentEnvironment = EnvironmentType.Snow;
                 Debug.Log("Ambiente de Neve ativo!");
                 break;
-
             case EnvironmentType.Snow:
-                if (environmentSnow != null) environmentSnow.SetActive(false);
                 Debug.Log("Todos os ambientes completos!");
                 break;
         }
@@ -281,13 +276,11 @@ public class GameManager : MonoBehaviour
     public void ResetAnimalPositions()
     {
         animalPanel.SetActive(true);
-
         if (associationOccupied != null && associationOccupied.Length > 0)
         {
             for (int _i = 0; _i < associationOccupied.Length; _i++)
                 associationOccupied[_i] = false;
         }
-
         foreach (var _animal in animals)
         {
             RectTransform _animalRect = _animal.animalObj.GetComponent<RectTransform>();
@@ -295,6 +288,13 @@ public class GameManager : MonoBehaviour
             _animalRect.anchoredPosition = _animal.originalPanelPosition;
         }
         RandomizePanelPositions();
+    }
+
+    public void CheckVictory()
+    {
+        PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
+        PlayerPrefs.SetInt("LevelWon", 1);
+        SceneManager.LoadScene("ResultScene");
     }
 }
 

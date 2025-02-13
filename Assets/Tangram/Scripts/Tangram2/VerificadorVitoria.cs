@@ -17,8 +17,15 @@ public class VerificadorVitoria : MonoBehaviour
 
         if (_totalEsperado > 0 && quantidadeDePecasNoLugar >= _totalEsperado)
         {
-            Debug.Log("Você Venceu!");
+            CheckVictory();
         }
+    }
+
+    public void CheckVictory()
+    {
+        PlayerPrefs.SetInt("LevelWon", 1);
+        PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("ResultScene");
     }
 
     public void RegistrarPecaNoLugar() => quantidadeDePecasNoLugar++;

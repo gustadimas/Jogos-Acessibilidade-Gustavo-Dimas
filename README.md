@@ -21,7 +21,7 @@ O projeto **Jogos Acessíveis** é um protótipo criado na Unity, com foco em ac
 
 Adaptação digital do mural criativo Montessori. O jogador arrasta criaturas de RPG para os biomas corretos, estimulando associação visual e categorização.
 
-- **Inspiração:** [Mural Criativo Montessori – LKStoreImports](https://www.lkstoreimports.com/products/mural-criativo-montessori?currency=BRL&variant=41662463541453&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=2a9c3f1375a2&gad_source=1&gclid=Cj0KCQjwsoe5BhDiARIsAOXVoUt-K2s5XrxRlYVZ0ZPmzJ_1px0LHRDkEsGat5BVKexqjWhm7oh79XsaAqOrEALw_wcB)
+- **Inspiração:** [Mural Criativo Montessori](https://www.lkstoreimports.com/products/mural-criativo-montessori?currency=BRL&variant=41662463541453&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=2a9c3f1375a2&gad_source=1&gclid=Cj0KCQjwsoe5BhDiARIsAOXVoUt-K2s5XrxRlYVZ0ZPmzJ_1px0LHRDkEsGat5BVKexqjWhm7oh79XsaAqOrEALw_wcB)
 - **Imagem:** Screenshot do Mural Criativo com um cenário aquático e uma painel com as criaturas. 
 - ![Image](./Docs/Images/Minigame1.jpg)
 
@@ -31,7 +31,7 @@ Adaptação digital do mural criativo Montessori. O jogador arrasta criaturas de
 
 Inspirado em brinquedos de tubos e bolas, o objetivo é separar todas as bolas por cor, organizando-as nos tubos corretos.
 
-- **Inspiração:** [Jogo Montessori Educativo Bolas e Copos – BrinquedosParaAutismo](https://brinquedosparaautismo.com.br/collections/brinquedos-para-autismo-5-anos/products/jogo-montessori-educativo-bolas-e-copos)
+- **Inspiração:** [Jogo Montessori Educativo Bolas e Copos](https://brinquedosparaautismo.com.br/collections/brinquedos-para-autismo-5-anos/products/jogo-montessori-educativo-bolas-e-copos)
 - **Imagem:** Screenshot do Ball Sort com tubos e bolas coloridas.
 - ![Image](./Docs/Images/Minigame2.jpg)
 
@@ -41,7 +41,7 @@ Inspirado em brinquedos de tubos e bolas, o objetivo é separar todas as bolas p
 
 Versão digital do tangram, onde o jogador deve montar a silhueta de uma baleia com formas geométricas.
 
-- **Inspiração:** [Quebra-Cabeça Cognitivo – MajocaColore](https://majocacolore.com.br/produto/quebra-cabeca-com-alfabeto-e-numeros-braquiossauro)
+- **Inspiração:** [Quebra-Cabeça Cognitivo](https://majocacolore.com.br/produto/quebra-cabeca-com-alfabeto-e-numeros-braquiossauro)
 - **Imagem:** Screenshot do Tangram formando a baleia.
 - ![Image](./Docs/Images/Minigame3.jpg)
 
@@ -69,8 +69,8 @@ Versão digital do tangram, onde o jogador deve montar a silhueta de uma baleia 
 ## Tecnologias Utilizadas
 
 - Unity (Game Engine)
-- Assets gratuitos do itch.io
-- Leonardo.AI (imagem de fundo do menu)
+- Assets gratuitos do [itch.io](https://itch.io/)
+- [Leonardo.AI](https://leonardo.ai/) (imagem de fundo do menu)
 - Adobe Illustrator (para edição de artes, se necessário)
 
 ---

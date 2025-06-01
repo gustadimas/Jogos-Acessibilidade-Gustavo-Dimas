@@ -10,7 +10,7 @@ O projeto **Jogos Acessíveis** é um protótipo criado na Unity, com foco em ac
 
 ### Menu Inicial
 
-- **Imagem:** Ilustração de fundo feita por IA [Leonardo.AI](Leonardo.AI), com cenário lúdico e colorido.
+- **Imagem:** Ilustração de fundo feita por IA [Leonardo.AI](https://leonardo.ai/), com cenário lúdico e colorido.
 - ![Image](./Docs/Images/Menu.jpg)
 
 ---

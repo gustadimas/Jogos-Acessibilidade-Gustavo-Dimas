@@ -4,13 +4,13 @@
 
 ## Sobre o Projeto
 
-O projeto **Jogos Acessíveis** é um protótipo criado na Unity, com foco em acessibilidade e inspirado em brinquedos pedagógicos. O objetivo é adaptar jogos clássicos de estimulação cognitiva para o meio digital, facilitando o acesso de crianças autistas ou com outras necessidades especiais. O protótipo utiliza assets gratuitos do itch.io e formas básicas da Unity.
+O projeto **Jogos Acessíveis** é um protótipo criado na Unity, com foco em acessibilidade e inspirado em brinquedos pedagógicos. O objetivo é adaptar jogos clássicos de estimulação cognitiva para o meio digital, facilitando o acesso de crianças autistas ou com outras necessidades especiais. O protótipo utiliza imagem gerada por IA, assets gratuitos do itch.io e formas básicas da Unity.
 
 ---
 
 ### Menu Inicial
 
-- **Imagem:** Ilustração de fundo feita por IA (Leonardo.AI), com cenário lúdico e colorido.
+- **Imagem:** Ilustração de fundo feita por IA [Leonardo.AI](Leonardo.AI), com cenário lúdico e colorido.
 - ![Image](./Docs/Images/Menu.jpg)
 
 ---

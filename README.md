@@ -10,7 +10,7 @@ O projeto **Jogos Acessíveis** é um protótipo criado na Unity, com foco em ac
 
 ### Menu Inicial
 
-- **Imagem:** Ilustração de fundo feita por IA (Leonardo.AI), com crianças e cenário lúdico e colorido.
+- **Imagem:** Ilustração de fundo feita por IA (Leonardo.AI), com cenário lúdico e colorido.
 - ![Image](./Docs/Images/Menu.jpg)
 
 ---
@@ -59,10 +59,11 @@ Versão digital do tangram, onde o jogador deve montar a silhueta de uma baleia 
 ## Créditos
 
 - **Desenvolvimento:** Gustavo Dimas
-- **Orientação:** Luiz Machado (Coordenardor do Curso de Jogos Digitais e Professor de Acessibilidade em Jogos Digitais)
-- **Inspirações:** Brinquedos pedagógicos de diversas lojas especializadas
-- **Assets:** itch.io (gratuitos para prototipagem)
+- **Orientação:** Luiz Machado (Coordenardor do Curso de Jogos Digitais e Professor de Acessibilidade em Jogos Digitais).
+- **Inspirações:** Brinquedos pedagógicos de diversas lojas especializadas.
+- **Assets:** itch.io (gratuitos para prototipagem).
 - ![Image](./Docs/Images/Creditos.jpg)
+
 ---
 
 ## Tecnologias Utilizadas

@@ -22,7 +22,7 @@ O projeto **Jogos Acessíveis** é um protótipo criado na Unity, com foco em ac
 Adaptação digital do mural criativo Montessori. O jogador arrasta criaturas de RPG para os biomas corretos, estimulando associação visual e categorização.
 
 - **Inspiração:** [Mural Criativo Montessori](https://www.lkstoreimports.com/products/mural-criativo-montessori?currency=BRL&variant=41662463541453&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=2a9c3f1375a2&gad_source=1&gclid=Cj0KCQjwsoe5BhDiARIsAOXVoUt-K2s5XrxRlYVZ0ZPmzJ_1px0LHRDkEsGat5BVKexqjWhm7oh79XsaAqOrEALw_wcB)
-- **Imagem:** Screenshot do Mural Criativo com um cenário aquático e uma painel com as criaturas. 
+- **Imagem:** Screenshot do mural criativo com um cenário aquático e uma painel com as criaturas. 
 - ![Image](./Docs/Images/Minigame1.jpg)
 
 ---
@@ -61,7 +61,7 @@ Versão digital do tangram, onde o jogador deve montar a silhueta de uma baleia 
 - **Desenvolvimento:** Gustavo Dimas
 - **Orientação:** Luiz Machado (Coordenardor do Curso de Jogos Digitais e Professor de Acessibilidade em Jogos Digitais).
 - **Inspirações:** Brinquedos pedagógicos de diversas lojas especializadas.
-- **Assets:** itch.io (gratuitos para prototipagem).
+- **Assets:** [itch.io](https://itch.io/) (gratuitos para prototipagem).
 - ![Image](./Docs/Images/Creditos.jpg)
 
 ---

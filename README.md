@@ -24,7 +24,7 @@ Adaptação digital do mural criativo Montessori. O jogador arrasta criaturas de
 - **Inspiração:** [Mural Criativo Montessori – LKStoreImports](https://www.lkstoreimports.com/products/mural-criativo-montessori?currency=BRL&variant=41662463541453&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=2a9c3f1375a2&gad_source=1&gclid=Cj0KCQjwsoe5BhDiARIsAOXVoUt-K2s5XrxRlYVZ0ZPmzJ_1px0LHRDkEsGat5BVKexqjWhm7oh79XsaAqOrEALw_wcB)
 - **Imagem:** Screenshot do Mural Criativo com um cenário aquático e uma painel com as criaturas. 
 - ![Image](Docs\Images\Minigame1.jpg)
-- 
+
 ---
 
 ### 2. Ball Sort (Organizador de Cores)
@@ -53,6 +53,7 @@ Versão digital do tangram, onde o jogador deve montar a silhueta de uma baleia 
 
 - **Imagem:** Inspirada em jogos Flash: tela com 3 estrelas representando a vitória do jogador.
 - ![Image](Docs\Images\Creditos.jpg)
+
 ---
 
 ## Créditos
